@@ -1,0 +1,12 @@
+.glass-card-component {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    padding: 24px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-component:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}

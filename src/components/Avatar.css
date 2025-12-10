@@ -1,0 +1,81 @@
+.avatar {
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--card-gradient);
+    border: 2px solid var(--glass-border);
+    box-shadow: var(--shadow-soft);
+}
+
+.avatar.sm {
+    width: 32px;
+    height: 32px;
+}
+
+.avatar.md {
+    width: 48px;
+    height: 48px;
+}
+
+.avatar.lg {
+    width: 80px;
+    height: 80px;
+}
+
+.avatar.xl {
+    width: 120px;
+    height: 120px;
+}
+
+/* The following .avatar-xl is a new class, not a modification of .avatar.xl */
+.avatar-xl {
+    width: 120px;
+    height: 120px;
+    font-size: 48px;
+}
+
+/* Illustrated Avatar Styles */
+.avatar-illustrated {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.avatar-emoji {
+    font-size: 70%;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar-initials {
+    font-weight: 600;
+    color: var(--text-primary);
+    font-family: var(--font-heading);
+}
+
+.avatar.sm .avatar-initials {
+    font-size: 12px;
+}
+
+.avatar.md .avatar-initials {
+    font-size: 16px;
+}
+
+.avatar.lg .avatar-initials {
+    font-size: 24px;
+}
+
+.avatar.xl .avatar-initials {
+    font-size: 36px;
+}

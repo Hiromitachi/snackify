@@ -1,0 +1,151 @@
+.search-page {
+    padding: 40px 0 120px 0;
+    min-height: 100vh;
+}
+
+.search-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.search-title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    background: linear-gradient(135deg, #2D3748 0%, #4A5568 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.search-bar-large {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 28px;
+    transition: all 0.3s ease;
+}
+
+.search-bar-large:focus-within {
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.search-icon {
+    color: var(--text-secondary);
+}
+
+.search-input-large {
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    color: var(--text-primary);
+}
+
+.search-input-large::placeholder {
+    color: var(--text-light);
+}
+
+.search-results {
+    animation: fadeIn 0.4s ease;
+}
+
+.results-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 28px;
+    color: var(--text-primary);
+}
+
+.snacks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.snack-card {
+    cursor: pointer;
+    padding: 0;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.snack-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.2);
+}
+
+.snack-image-wrapper {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%);
+}
+
+.snack-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.snack-card:hover .snack-image {
+    transform: scale(1.1);
+}
+
+.snack-info {
+    padding: 20px;
+}
+
+.snack-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.snack-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex: 1;
+}
+
+.snack-brand {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+
+.snack-footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.review-count {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.search-empty {
+    text-align: center;
+    padding: 80px 20px;
+    color: var(--text-secondary);
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .search-title {
+        font-size: 32px;
+    }
+
+    .snacks-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 16px;
+    }
+}

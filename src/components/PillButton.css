@@ -1,0 +1,29 @@
+.pill-button {
+    padding: 10px 20px;
+    border-radius: var(--radius-full);
+    font-size: 14px;
+    font-weight: 500;
+    border: 1.5px solid var(--border-gray);
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    background: var(--white);
+    color: var(--text-secondary);
+}
+
+.pill-button:hover {
+    border-color: var(--light-orange);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+}
+
+.pill-button.active {
+    background: var(--primary-orange);
+    color: var(--white);
+    border-color: var(--primary-orange);
+    box-shadow: var(--shadow-orange);
+    transform: translateY(-1px);
+}
+
+.pill-button:active {
+    transform: scale(0.98);
+}
